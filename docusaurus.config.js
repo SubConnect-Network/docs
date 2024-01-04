@@ -33,6 +33,17 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  plugins: [
+    [
+      require.resolve('@cmfcmf/docusaurus-search-local'),
+      {
+        indexDocs: true,
+        indexPages: false,
+        language: ["en"],
+        maxSearchResults: 10,
+      },
+    ],
+  ],
 
   presets: [
     [
